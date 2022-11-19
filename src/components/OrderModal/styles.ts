@@ -61,6 +61,8 @@ export const OrderDetails = styled.div`
       width: 40px;
       height: 40px;
       border-radius: 6px;
+      object-fit: cover;
+      object-position: center;
     }
 
     > span {
@@ -105,6 +107,11 @@ export const Actions = styled.footer`
   display: flex;
   flex-direction: column;
   gap: 16px;
+
+  button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
 
   .primary {
     background-color: #333333;
